@@ -1,0 +1,49 @@
+.navbar {
+    background-image: linear-gradient(to bottom right, #080228, rgb(5, 72, 74));
+    border-bottom: 6px solid #3e0208;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: whitesmoke;
+}
+
+.navbar-brand{
+    font-weight: bolder;
+}
+
+li a {
+    background-color: rgb(5, 72, 74);
+    border: 1px solid rgb(2, 150, 155);
+}
+
+li a:hover {
+    background-color: rgb(2, 150, 155);
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.main {
+    background-color: rgb(8, 2, 41);
+}
+
+.color {
+    color: rgb(10, 156, 160);
+}
+
+.button{
+    background-color: rgb(10, 156, 160);
+}
+
+.border {
+    border: 2px solid rgb(10, 156, 160)! important;
+    border-radius: 5px;
+    /* color: white; */
+    /* background-color: teal; */
+}
+
+.border:hover {
+    border: 2px solid rgb(10, 156, 160)! important;
+    border-radius: 5px;
+    color: white;
+    background-color: teal;
+}
