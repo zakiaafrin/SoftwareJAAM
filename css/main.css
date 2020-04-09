@@ -1,6 +1,6 @@
 .navbar {
     background-image: linear-gradient(to bottom right, #080228, rgb(5, 72, 74));
-    border-bottom: 6px solid #3e0208;
+    border-bottom: 5px solid rgb(10, 156, 160);
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -24,6 +24,45 @@ li a:hover {
 
 .main {
     background-color: rgb(8, 2, 41);
+}
+
+.moral_1 {
+    background-image: url(../images/moral_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 2px solid cornflowerblue;
+}
+
+.moral_2 {
+    background-image: url(../images/moral_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 2px solid cornflowerblue;
+}
+
+.moral_3 {
+    background-image: url(../images/moral_3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 2px solid cornflowerblue;
+    border-bottom: 2px solid cornflowerblue;
+}
+
+hr {
+    border-top: 2px solid rgb(10, 156, 160);
+}
+
+.hire {
+    color: white;
+
+}
+
+.moral_4 {
+    background-image: url(../images/moral_4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 2px solid cornflowerblue;
+    border-bottom: 2px solid cornflowerblue;
 }
 
 .color {
