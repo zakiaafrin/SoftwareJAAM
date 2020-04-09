@@ -54,3 +54,16 @@ textarea {
     max-width: 100%;
     height: auto;
 }
+
+.footer-wrapper {
+    /* background-image: linear-gradient(to bottom right, #080228, rgb(5, 72, 74)); */
+    background-color: black;
+    padding: 36px 0 10px 0;
+    color: whitesmoke;
+}
+
+.social-icon {
+    font-size: 25px;
+    margin-bottom: 48px;
+    cursor: pointer;
+}

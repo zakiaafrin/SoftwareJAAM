@@ -51,7 +51,7 @@
   <!-- Navbar Ends -->
 
   <!-- container-fluid -->
-  <div class="container-fluid text-white main">
+  <div class="container-fluid text-white py-4 main">
     <div class="container">
       <div class="row align-items-center py-5">
         <div class="col-md-6 align-items-center">
@@ -61,8 +61,8 @@
           <p class="py-2">Understanding the concepts & thoughts and knack of giving them the shape is what we are
             all about…</p>
 
-          <button type="button" class="btn btn-primary py-2 button">
-            View More
+          <a href="#service" class="btn btn-primary py-2 button">View More</a>
+
           </button>
 
         </div>
@@ -175,7 +175,7 @@
   </div>
   <!-- Service Section Ends -->
 
-  <!-- About Section -->
+  <!-- About Us Section -->
   <div class="container-fluid text-white py-5" id="about" style="background-color: #2d1152;">
     <h1 class="text-center mt-5">About Us</h1>
     <div class="container">
@@ -183,16 +183,13 @@
         <div class="col-lg-6 col-md-6">
           <h3>Hello!</h3>
           <h3 class="mb-4">We are a team of passionate Software Developer!</h3>
-          <strong class="mb-5">As Software Developer, we should be fuel for our clients as they travel toward
-            their
-            end
-            goals.</strong>
-          <p class="py-3">If you boil the role of the ‘design agency’ down, you’ll soon find that it reduces to a
-            single key
-            concept: your job is to make your client(s) successful.</p class="mt-4">
-          <p>We are very passionate about Software Development and work hard to see our clients succeed. We’ve been
-            building user friendly responsive Websites, Web Applications, eCommerce – Online Stores, Website
-            Redesign, Logo and Graphic Designs for 2 years.</p>
+          <strong class="mb-5 text-justify">As Software Developer, we should be fuel for our clients as they travel
+            toward their end goals.</strong>
+          <p class="py-3 text-justify">If you boil the role of the ‘design agency’ down, you’ll soon find that it
+            reduces to a single key concept: your job is to make your client(s) successful.</p class="mt-4">
+          <p class="text-justify">We are very passionate about Software Development and work hard to see our clients
+            succeed. We’ve been building user friendly responsive Websites, Web Applications, eCommerce – Online Stores,
+            Website Redesign, Logo and Graphic Designs for 2 years.</p>
         </div>
         <div class="col-lg-6 col-md-6">
           <div>
@@ -202,7 +199,7 @@
       </div>
     </div>
   </div>
-  <!-- About Section Ends -->
+  <!-- About Us Section Ends -->
 
   <!-- Contact Section -->
   <div class="container-fluid text-white py-5" id="contact" style="background-color: #061a33">
@@ -258,8 +255,8 @@
           </div>
         </div>
 
-        <div class="col-md-4 offset-md-1 py-4">
-          <h5 class="color">If you want to know more about our service please contact us!</h5 class="color">
+        <div class="col-md-4 offset-md-1 py-5">
+          <h5 class="color mt-3">If you want to know more about our service please contact us!</h5 class="color">
 
           <div class="row py-3">
             <div><i class="fa fa-phone">
@@ -304,8 +301,42 @@
   </div>
   <!-- Contact Section Ends -->
 
-
-  <!-- container Ends -->
+  <!-- Footer -->
+  <footer class="footer-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h4 class="text-center">
+            Follow Us
+          </h4>
+          <div class="text-center">
+            <a href="https://www.facebook.com/jaamsoftwaresolutions/" target="_blank">
+              <i class="fab fa-facebook-square social-icon"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="text-center">
+            <p>CopyRight ©
+              <script>document.write(new Date().getFullYear())</script> JAAM Software Solution. All Rights Reserved.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <!-- Home Button -->
+          <div class="fixed-bottom">
+            <div class="float-right m-4">
+              <a href="#">
+                <img class="img-fluid" src="./images/home.png" width="50" alt="GoToHome">
+              </a>
+            </div>
+          </div>
+          <!-- Home Button Ends -->
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer Ends -->
 
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -314,32 +345,26 @@
   <script src="js/bootstrap4.min.js"></script>
 
   <script>
-    // Example starter JavaScript for disabling form submissions if there are invalid fields
-    (function () {
-      'use strict';
-      window.addEventListener('load', function () {
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        var forms = document.getElementsByClassName('needs-validation');
-        // Loop over them and prevent submission
-        var validation = Array.prototype.filter.call(forms, function (form) {
-          form.addEventListener('submit', function (event) {
-            if (form.checkValidity() === false) {
-              event.preventDefault();
-              event.stopPropagation();
-            }
-            form.classList.add('was-validated');
-          }, false);
-        });
-      }, false);
-    })();
-
-
-    // Add the following code if you want the name of the file appear on select
-    $(".custom-file-input").on("change", function () {
-      var fileName = $(this).val().split("\\").pop();
-      $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
-    });
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function () {
+        'use strict';
+        window.addEventListener('load', function () {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function (form) {
+            form.addEventListener('submit', function (event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
   </script>
+
 </body>
 
 </html>
