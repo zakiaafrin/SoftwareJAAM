@@ -30,6 +30,7 @@ li a:hover {
     background-image: url(../images/moral_1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     border-top: 2px solid cornflowerblue;
 }
 
@@ -37,6 +38,7 @@ li a:hover {
     background-image: url(../images/moral_2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     border-bottom: 2px solid cornflowerblue;
 }
 
@@ -44,6 +46,7 @@ li a:hover {
     background-image: url(../images/moral_3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     border-top: 2px solid cornflowerblue;
     border-bottom: 2px solid cornflowerblue;
 }
@@ -52,17 +55,14 @@ hr {
     border-top: 2px solid rgb(10, 156, 160);
 }
 
-.hire {
-    color: white;
-
-}
-
 .moral_4 {
     background-image: url(../images/moral_4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     border-top: 2px solid cornflowerblue;
     border-bottom: 2px solid cornflowerblue;
+    opacity: 80%;;
 }
 
 .color {
@@ -95,7 +95,6 @@ textarea {
 }
 
 .footer-wrapper {
-    /* background-image: linear-gradient(to bottom right, #080228, rgb(5, 72, 74)); */
     background-color: black;
     padding: 36px 0 10px 0;
     color: whitesmoke;
