@@ -7,6 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0,  shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="icon" type="image/jpg" href="images/softwareJaam_logo.png">
+  <link rel="stylesheet" href="./css/animate.css">
+
+  <!-- Smooth Scrolling Animation -->
+  <link rel="stylesheet" href="css/aos.css">
+
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/bootstrap4.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm">
@@ -33,16 +38,16 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="nav navbar-nav ml-auto">
-        <li class="nav-item mr-3">
+        <li class="nav-item mr-3 animated fadeInRight" data-aos="fade-left">
           <a class="nav-link" href="#">Home</a>
         </li>
-        <li class="nav-item mr-3">
+        <li class="nav-item mr-3 animated fadeInRight" data-aos="fade-left">
           <a class="nav-link" href="#service">Service</a>
         </li>
-        <li class="nav-item mr-3">
+        <li class="nav-item mr-3 animated fadeInRight" data-aos="fade-left">
           <a class="nav-link" href="#about">About Us</a>
         </li>
-        <li class="nav-item mr-3">
+        <li class="nav-item mr-3 animated fadeInRight" data-aos="fade-left">
           <a class="nav-link" href="#contact">Contact</a>
         </li>
       </ul>
@@ -56,7 +61,7 @@
     <div class="container">
       <div class="row align-items-center py-5">
         <div class="col-md-6 align-items-center">
-          <h2>WEB APPLICATION DEVELOPMENT</h2>
+          <h2 data-aos="fade-up">WEB APPLICATION DEVELOPMENT</h2 data-aos-anchor-placement="bottom-bottom">
           <h4 class="py-2">We know-our, Innovation and Responsibility.</h4>
           <h5>Your content-our idea a great product. </h5>
           <p class="py-2">Understanding the concepts & thoughts and knack of giving them the shape is what we are
@@ -87,9 +92,9 @@
 
   <!-- Service Section -->
   <div class="container py-5" id="service">
-    <h1 class="text-center mt-5">Our Services</h1>
+    <h1 class="text-center mt-5" data-aos="fade-down">Our Services</h1>
     <div class="container">
-      <div class="row">
+      <div class="row" data-aos="fade-down">
         <div class="mx-auto">
           <img class="img-fluid" src="./images/service.png" alt="Service Image">
         </div>
@@ -381,25 +386,31 @@
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap4.min.js"></script>
 
+  <!-- Smooth Scrolling Animation -->
+  <script src="js/aos.js"></script>
   <script>
-      // Example starter JavaScript for disabling form submissions if there are invalid fields
-      (function () {
-        'use strict';
-        window.addEventListener('load', function () {
-          // Fetch all the forms we want to apply custom Bootstrap validation styles to
-          var forms = document.getElementsByClassName('needs-validation');
-          // Loop over them and prevent submission
-          var validation = Array.prototype.filter.call(forms, function (form) {
-            form.addEventListener('submit', function (event) {
-              if (form.checkValidity() === false) {
-                event.preventDefault();
-                event.stopPropagation();
-              }
-              form.classList.add('was-validated');
-            }, false);
-          });
-        }, false);
-      })();
+    AOS.init();
+  </script>
+
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+      'use strict';
+      window.addEventListener('load', function () {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function (form) {
+          form.addEventListener('submit', function (event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
   </script>
 
 </body>
