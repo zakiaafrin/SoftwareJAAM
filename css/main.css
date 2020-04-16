@@ -40,6 +40,39 @@ li a:hover {
     border-top: 2px solid cornflowerblue;
 }
 
+.card{
+    border: none;
+}
+
+.accordion-item[aria-expanded=true]{
+    color: green;
+    text-decoration: none;
+}
+
+.accordion-desc{
+    -webkit-box-shadow: 0 9px 30px -5px rgba(50,50,83,.25), 0 8px 8px -12px rgba(0,0,0,.2), 0 -6px 16px -6px rgba(0,0,0,.025);
+    box-shadow: 0 9px 30px -5px rgba(50,50,83,.25), 0 8px 8px -12px rgba(0,0,0,.2), 0 -6px 16px -6px rgba(0,0,0,.025);
+    border-radius: 11PX;
+    padding: 3.6em;
+    text-align: justify;
+    background-color: rgb(189, 240, 245);
+    margin: 1.25em 0 3em 0;
+}
+
+.accordion-expand-btn-wrapper{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -15px;
+}
+[aria-expanded=true] .accordion-expand-btn{
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    color: #d33a2c;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
 .moral_2 {
     background-image: url(../images/moral_2.jpg);
     background-repeat: no-repeat;
@@ -68,7 +101,7 @@ hr {
     background-attachment: fixed;
     border-top: 2px solid cornflowerblue;
     border-bottom: 2px solid cornflowerblue;
-    opacity: 80%;;
+    opacity: 95%;
 }
 
 .color {
@@ -80,7 +113,7 @@ hr {
 }
 
 .border {
-    border: 2px solid rgb(10, 156, 160)! important;
+    border: 2px dotted rgb(10, 156, 160)! important;
     border-radius: 5px;
 }
 

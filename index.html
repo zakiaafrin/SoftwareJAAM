@@ -61,20 +61,19 @@
     <div class="container">
       <div class="row align-items-center py-5">
         <div class="col-md-6 align-items-center">
-          <h2 data-aos="fade-up">WEB APPLICATION DEVELOPMENT</h2 data-aos-anchor-placement="bottom-bottom">
-          <h4 class="py-2">We know-our, Innovation and Responsibility.</h4>
-          <h5>Your content-our idea a great product. </h5>
-          <p class="py-2">Understanding the concepts & thoughts and knack of giving them the shape is what we are
-            all about…</p>
-
-          <a href="#service" class="btn btn-primary py-2 button">View More</a>
-
-          </button>
+          <h2 class="animated slideInDown">WEB APPLICATION DEVELOPMENT</h2>
+          <h4 class="py-2 animated slideInUp">We know-our, Innovation and Responsibility.</h4>
+          <h5 class="animated slideInUp">Your content-our idea a great product. </h5>
+          <p class="py-2 animated slideInUp">Understanding the concepts & thoughts and knack of giving them the shape is
+            what we are all about…</p>
+          <!-- <button class="animated lightSpeedIn"> -->
+          <a href="#service" class="btn btn-primary py-2 button animated bounceInUp">View More</a>
+          <!-- </button> -->
 
         </div>
         <div class="col-md-6 mb-5">
           <div>
-            <img class="img-fluid" src="./images/img1.png" width="550" height="470" alt="Image">
+            <img class="img-fluid animated lightSpeedIn" src="./images/img1.png" width="550" height="470" alt="Image">
           </div>
         </div>
       </div>
@@ -84,7 +83,7 @@
 
   <!-- Moral Talk -->
   <div class="container-fluid text-center py-5 moral_1">
-    <div class="container py-3">
+    <div class="container py-3" data-aos="zoom-in" data-aos-duration="700">
       <h2 class="text-white">Think positive with creative people and new technology</h2>
     </div>
   </div>
@@ -92,97 +91,185 @@
 
   <!-- Service Section -->
   <div class="container py-5" id="service">
-    <h1 class="text-center mt-5" data-aos="fade-down">Our Services</h1>
+    <h1 class="text-center mt-5" data-aos="fade-down" data-aos-duration="700">Our Services</h1>
     <div class="container">
-      <div class="row" data-aos="fade-down">
+      <div class="row" data-aos="fade-down" data-aos-duration="800">
         <div class="mx-auto">
           <img class="img-fluid" src="./images/service.png" alt="Service Image">
         </div>
       </div>
-      <div class="row py-5">
-        <div class="col">
-          <h3 class="color">Website Development</h3>
-          <p class="text-justify border p-2">
-            We are Full-Stack Web Developer. We develop websites that elevate your brand and communicate your
-            message effectively. Our development process requires understanding your brand, needs, plain points and
-            develop an appropriate timeline and project plan.
-          </p>
+      <div class="accordion" id="accordion">
+        <div class="card">
+          <div class="card-header" id="heading_1">
+            <h2 class="mb-0">
+              <button class="btn btn-link accordion-item" type="button" data-toggle="collapse" data-target="#collapse_1"
+                aria-expanded="true" aria-controls="collapse_1">
+                Website Development
+              </button>
+              <div class="accordion-expand-btn-wrapper"><span
+                  class="accordion-expand-btn js-accordion-expand-btn">+</span>
+              </div>
+            </h2>
+          </div>
+
+          <div id="collapse_1" class="collapse" aria-labelledby="heading_1" data-parent="#accordion">
+            <div class="card-body accordion-desc border">
+              We are Full-Stack Web Developer. We develop websites that elevate your brand and communicate your message
+              effectively. Our development process requires understanding your brand, needs, plain points and develop an
+              appropriate timeline and project plan.
+            </div>
+          </div>
         </div>
-        <div class="col">
-          <h3 class="text-right color">Website Design</h3>
-          <p class="text-justify border p-2">If you’re looking for something on a budget, or a multi-layer, custom built
-            website design, our web design and development team make sure you get nothing but the best solutions on
-            the web bringing you the perfect blend of design and functionality.</p>
+        <div class="card">
+          <div class="card-header" id="heading_2">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed accordion-item" type="button" data-toggle="collapse"
+                data-target="#collapse_2" aria-expanded="false" aria-controls="collapse_2">
+                Website Design
+              </button>
+            </h2>
+          </div>
+          <div id="collapse_2" class="collapse" aria-labelledby="heading_2" data-parent="#accordion">
+            <div class="card-body accordion-desc border">
+              If you’re looking for something on a budget, or a multi-layer, custom built website design, our web design
+              and development team make sure you get nothing but the best solutions on the web bringing you the perfect
+              blend of design and functionality.
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <h3 class="color">Customized Online Store</h3>
-          <p class="text-justify border p-2" style="height: 116px;">We build basic online store for our clients with an
-            affordable price. Our
-            team
-            also build and maintain a store completely specialized for your business.</p>
+        <div class="card">
+          <div class="card-header" id="heading_3">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed accordion-item" type="button" data-toggle="collapse"
+                data-target="#collapse_3" aria-expanded="false" aria-controls="collapse_3">
+                Customized Online Store
+              </button>
+            </h2>
+          </div>
+          <div id="collapse_3" class="collapse" aria-labelledby="heading_3" data-parent="#accordion">
+            <div class="card-body accordion-desc border">
+              We build basic online store for our clients with an affordable price. Our team also build and maintain a
+              store completely specialized for your business.
+            </div>
+          </div>
         </div>
-        <div class="col">
-          <h3 class="text-right color">Application Development</h3>
-          <p class="text-justify border p-2">We build high quality web application for website as well as for Shopify
-            store.
-            In
-            accordance with our customers’ business requirements, we choose our backend development tools and
-            develop robust and durable web applications.</p>
+        <div class="card">
+          <div class="card-header" id="heading_4">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed accordion-item" type="button" data-toggle="collapse"
+                data-target="#collapse_4" aria-expanded="false" aria-controls="collapse_4">
+                Application Development
+              </button>
+            </h2>
+          </div>
+          <div id="collapse_4" class="collapse" aria-labelledby="heading_4" data-parent="#accordion">
+            <div class="card-body accordion-desc border">
+              We build high quality web application for website as well as for Shopify store. In accordance with our
+              customers’ business requirements, we choose our backend development tools and develop robust and durable
+              web
+              applications.
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="row py-5">
-        <div class="col">
-          <h3 class="color">Website Redesign</h3 class="color">
-          <p class="text-justify border p-2">
-            Everything about your website – including the content, the way it looks, and the way it works – is
-            determined by the Website Design. We have the ability to understand what is needed to make a website
-            functional and easy to use, but at the same time make it aesthetically appealing to the user.
-          </p>
+        <div class="card">
+          <div class="card-header" id="heading_5">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed accordion-item" type="button" data-toggle="collapse"
+                data-target="#collapse_5" aria-expanded="false" aria-controls="collapse_5">
+                Website Redesign
+              </button>
+            </h2>
+          </div>
+          <div id="collapse_5" class="collapse" aria-labelledby="heading_5" data-parent="#accordion">
+            <div class="card-body accordion-desc border">
+              Everything about your website – including the content, the way it looks, and the way it works – is
+              determined by the Website Design. We have the ability to understand what is needed to make a website
+              functional and easy to use, but at the same time make it aesthetically appealing to the user.
+            </div>
+          </div>
         </div>
-        <div class="col">
-          <h3 class="text-right color">Built From Scratch</h3>
-          <p class="text-justify border p-2">Creativity and skill determine the outcome of every web building process.
-            Building
-            a website from scratch can be both exciting and challenging. We’re building websites from scratch based
-            on our own inspirations and taste. All design is there because we thought about it and it meets our own
-            level of expectations.</p>
+        <div class="card">
+          <div class="card-header" id="heading_6">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed accordion-item" type="button" data-toggle="collapse"
+                data-target="#collapse_6" aria-expanded="false" aria-controls="collapse_6">
+                Built From Scratch
+              </button>
+            </h2>
+          </div>
+          <div id="collapse_6" class="collapse" aria-labelledby="heading_6" data-parent="#accordion">
+            <div class="card-body accordion-desc border">
+              Creativity and skill determine the outcome of every web building process. Building a website from scratch
+              can be both exciting and challenging. We’re building websites from scratch based on our own inspirations
+              and
+              taste. All design is there because we thought about it and it meets our own level of expectations.
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <h3 class="color">Branding & Logo</h3 class="color">
-          <p class="text-justify border p-2">Everything you need to know about branding and designing killer logos. We
-            have
-            a
-            branding expert who helps brands grow by crafting distinctive logos & brand identities, backed by
-            strategy.</p>
+        <div class="card">
+          <div class="card-header" id="heading_7">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed accordion-item" type="button" data-toggle="collapse"
+                data-target="#collapse_7" aria-expanded="false" aria-controls="collapse_7">
+                Branding & Logo
+              </button>
+            </h2>
+          </div>
+          <div id="collapse_7" class="collapse" aria-labelledby="heading_7" data-parent="#accordion">
+            <div class="card-body accordion-desc border">
+              Everything you need to know about branding and designing killer logos. We have a branding expert who helps
+              brands grow by crafting distinctive logos & brand identities, backed by strategy.
+            </div>
+          </div>
         </div>
-        <div class="col">
-          <h3 class="text-right color">E-marketing</h3>
-          <p class="text-justify border p-2">After publishing your website, it is important to let people know about it,
-            so
-            we
-            advise you on how to build your E-Marketing Campaign, to promote and uprank your website in the main
-            Social Networks.</p>
+        <div class="card">
+          <div class="card-header" id="heading_8">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed accordion-item" type="button" data-toggle="collapse"
+                data-target="#collapse_8" aria-expanded="false" aria-controls="collapse_8">
+                E-marketing
+              </button>
+            </h2>
+          </div>
+          <div id="collapse_8" class="collapse" aria-labelledby="heading_8" data-parent="#accordion">
+            <div class="card-body accordion-desc border">
+              After publishing your website, it is important to let people know about it, so we advise you on how to
+              build
+              your E-Marketing Campaign, to promote and uprank your website in the main Social Networks.
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="row py-5">
-        <div class="col">
-          <h3 class="color">Responsive Design</h3 class="color">
-          <p class="text-justify border p-2">
-            We live in a mobile world and your products should be easy to consume and look great on any device. All
-            of our product themes are fully responsive and look beautiful on computers, tablets, and phones.
-          </p>
+        <div class="card">
+          <div class="card-header" id="heading_9">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed accordion-item" type="button" data-toggle="collapse"
+                data-target="#collapse_9" aria-expanded="false" aria-controls="collapse_9">
+                Responsive Design
+              </button>
+            </h2>
+          </div>
+          <div id="collapse_9" class="collapse" aria-labelledby="heading_9" data-parent="#accordion">
+            <div class="card-body accordion-desc border">
+              We live in a mobile world and your products should be easy to consume and look great on any device. All of
+              our product themes are fully responsive and look beautiful on computers, tablets, and phones.
+            </div>
+          </div>
         </div>
-        <div class="col">
-          <h3 class="text-right color">Maintenance & Updates </h3>
-          <p class="text-justify border p-2" style="height: 116px;">Wow!!! you have a nice website. But you have some
-            problem in your website
-            or
-            you
-            can not update or change your website. We can do maintenance and update for your website </p>
+        <div class="card">
+          <div class="card-header" id="heading_10">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed accordion-item" type="button" data-toggle="collapse"
+                data-target="#collapse_10" aria-expanded="false" aria-controls="collapse_10">
+                Maintenance & Updates
+              </button>
+            </h2>
+          </div>
+          <div id="collapse_10" class="collapse" aria-labelledby="heading_10" data-parent="#accordion">
+            <div class="card-body accordion-desc border">
+              Wow!!! you have a nice website. But you have some problem in your website or you can not update or change
+              your website. We can do maintenance and update for your website.
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -192,9 +279,11 @@
   <!-- Moral Talk -->
   <div class="container-fluid text-center py-5 moral_2">
     <div class="container mt-5">
-      <h2 class="text-white">Development & design that empowers the world</h2>
-      <hr>
-      <h2 class="text-white py-5">
+      <h2 class="text-white" data-aos-duration="1200" data-aos="fade-right">Development & design that empowers the
+        world
+      </h2>
+      <hr data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="center-center">
+      <h2 class="text-white py-5" data-aos-duration="1200" data-aos="fade-left">
         <a class="btn btn-primary py-2 button" href="#contact">Hire us to build you a great website</a>
       </h2>
     </div>
@@ -203,10 +292,10 @@
 
   <!-- About Us Section -->
   <div class="container-fluid text-white py-5" id="about" style="background-color: #2d1152;">
-    <h1 class="text-center mt-5">About Us</h1>
+    <h1 class="text-center mt-5" data-aos="fade-down" data-aos-duration="700">About Us</h1>
     <div class="container">
       <div class="row py-5">
-        <div class="col-lg-6 col-md-6">
+        <div class="col-lg-6 col-md-6" data-aos="fade-right" data-aos-duration="1000">
           <h3>Hello!</h3>
           <h3 class="mb-4">We are a team of passionate Software Developer!</h3>
           <strong class="mb-5 text-justify">As Software Developer, we should be fuel for our clients as they travel
@@ -214,10 +303,11 @@
           <p class="py-3 text-justify">If you boil the role of the ‘design agency’ down, you’ll soon find that it
             reduces to a single key concept: your job is to make your client(s) successful.</p class="mt-4">
           <p class="text-justify">We are very passionate about Software Development and work hard to see our clients
-            succeed. We’ve been building user friendly responsive Websites, Web Applications, eCommerce – Online Stores,
+            succeed. We’ve been building user friendly responsive Websites, Web Applications, eCommerce – Online
+            Stores,
             Website Redesign, Logo and Graphic Designs for 2 years.</p>
         </div>
-        <div class="col-lg-6 col-md-6">
+        <div class="col-lg-6 col-md-6" data-aos="fade-left" data-aos-duration="1000">
           <div>
             <img class="img-fluid" src="./images/img2.png" width="530" height="450" alt="Image">
           </div>
@@ -229,7 +319,7 @@
 
   <!-- Moral Talk -->
   <div class="container-fluid text-center py-5 moral_3">
-    <div class="container py-3">
+    <div class="container py-3" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
       <h2 class="text-white">Creatively deliver custom solutions that attract customers & grow your business</h2>
     </div>
   </div>
@@ -237,20 +327,20 @@
 
   <!-- Contact Section -->
   <div class="container-fluid text-white py-5" id="contact" style="background-color: #061a33">
-    <h1 class="text-center mt-5">Contact Us</h1>
+    <h1 class="text-center mt-5" data-aos="fade-down" data-aos-duration="700">Contact Us</h1>
     <div class="container py-5">
 
       <!-- Form with cards -->
       <div class="row">
         <div class="col-md-7 py-3">
-          <h2 class="color">Let's Talk About Your Project!</h2 class="color">
-          <div class="card mt-3" style="border: 5px solid #888888;">
+          <h2 class="color" data-aos="zoom-out-down" data-aos-duration="700">Let's Talk About Your Project!</h2>
+          <div class="card mt-3" style="border: 5px solid #888888;" data-aos="fade-right" data-aos-duration="700">
             <div class="card-body">
               <form class="needs-validation" novalidate>
                 <div class="form-row">
                   <div class="col-md-6 mb-3">
                     <label for="validationCustom01">Your Name</label>
-                    <input type="text" class="form-control" id="validationCustom01" value="Your Name" required>
+                    <input type="text" class="form-control" id="validationCustom01" placeholder="Your Name" required>
                     <div class="valid-feedback">
                       Looks good!
                     </div>
@@ -260,7 +350,7 @@
                   </div>
                   <div class="col-md-6 mb-3">
                     <label for="validationCustom02">Email Address</label>
-                    <input type="email" class="form-control" id="validationCustom02" value="Your Email" required>
+                    <input type="email" class="form-control" id="validationCustom02" placeholder="Your Email" required>
                     <div class="valid-feedback">
                       Looks good!
                     </div>
@@ -272,8 +362,7 @@
                 <div class="form-row">
                   <div class="col-md-12 mb-3">
                     <label for="validationCustom03">Message</label>
-                    <textarea class="form-control" id="validationCustom03" value="Message" placeholder="Message"
-                      required></textarea>
+                    <textarea class="form-control" id="validationCustom03" placeholder="Message" required></textarea>
                     <div class="valid-feedback">
                       Looks good!
                     </div>
@@ -283,32 +372,35 @@
                   </div>
                 </div>
 
-                <button class="btn btn-primary button" type="submit">Contact Us</button>
+                <button class="btn btn-primary button" type="submit" data-aos="zoom-in" data-aos-duration="700">Contact
+                  Us</button>
               </form>
             </div>
           </div>
         </div>
 
         <div class="col-md-4 offset-md-1 py-5">
-          <h5 class="color mt-3">If you want to know more about our service please contact us!</h5 class="color">
+          <h5 class="color mt-3" data-aos="zoom-out-down" data-aos-duration="700">If you want to know more about our
+            service please contact us!</h5 class="color">
 
           <div class="row py-3">
-            <div><i class="fa fa-phone">
-                <strong class="color"> &nbsp; Phone : </strong></i></div>
+            <div><i class="fa fa-phone" data-aos="fade-left" data-aos-duration="700">
+                <strong class="color"> &nbsp; Phone : </strong></i>
+            </div>
             <div>
-              <p> &nbsp; +17867024842</p>
-              <p> &nbsp; +17867024842</p>
-              <p> &nbsp; +17867024842</p>
+              <p data-aos="fade-left" data-aos-duration="700"> &nbsp; +17867024842</p data-aos="fade-left">
+              <p data-aos="fade-left" data-aos-duration="700"> &nbsp; +17867024842</p data-aos="fade-left">
+              <p data-aos="fade-left" data-aos-duration="700"> &nbsp; +17867024842</p data-aos="fade-left">
             </div>
           </div>
 
-          <div class="row">
+          <div class="row" data-aos="fade-left" data-aos-duration="700">
             <div><i class="fa fa-envelope">
                 <strong class="color"> &nbsp; Email : </strong></i></div>
             <p> &nbsp; info@softwarejaam.com</p>
           </div>
 
-          <div class="row">
+          <div class="row" data-aos="fade-left" data-aos-duration="700">
             <div><i class="fa fa-map-marker">
                 <strong class="color"> &nbsp; Address : </strong></i></div>
             <p> &nbsp; MIAMI, FL33179, USA</p>
@@ -319,7 +411,7 @@
       <!-- Form with cards Ends -->
 
       <!-- Google Map -->
-      <div class="row">
+      <div class="row py-3" data-aos="fade-up-right" data-aos-duration="1000">
         <div class="container py-5">
           <div style="width: 100%">
             <iframe width="100%" height="500"
@@ -337,7 +429,8 @@
 
   <!-- Moral Talk -->
   <div class="container-fluid text-center py-5 moral_4">
-    <div class="container text-white py-3">
+    <div class="container text-white py-3" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000">
       <h2>Let's bring your dreams to life</h2>
     </div>
   </div>
@@ -348,10 +441,10 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h4 class="text-center">
+          <h4 class="text-center" data-aos="fade-right" data-aos-duration="700">
             Follow Us
           </h4>
-          <div class="text-center">
+          <div class="text-center" data-aos="fade-left" data-aos-duration="700">
             <a href="https://www.facebook.com/jaamsoftwaresolutions/" target="_blank">
               <i class="fab fa-facebook-square social-icon"></i>
             </a>
