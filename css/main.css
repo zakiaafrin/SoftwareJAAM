@@ -133,6 +133,11 @@ textarea {
     height: auto;
 }
 
+.row-position {
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
 .footer-wrapper {
     background-color: black;
     padding: 36px 0 10px 0;
@@ -143,4 +148,12 @@ textarea {
     font-size: 25px;
     margin-bottom: 48px;
     cursor: pointer;
+}
+
+.scroll-up {
+    position: fixed;
+    display: none;
+    z-index: 999;
+    bottom: 1.8em;
+    right: 1.8em;
 }
