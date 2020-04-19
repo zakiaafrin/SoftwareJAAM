@@ -2,7 +2,10 @@
 ========================== */
 * {
     margin: 0;
-    padding: 0;
+}
+
+body, html {
+    overflow-x: hidden;
 }
 
 html {
@@ -205,11 +208,6 @@ hr {
 
 textarea {
     min-height: 150px;
-}
-
-.img-fluid {
-    max-width: 100%;
-    height: auto;
 }
 
 .row-position {
