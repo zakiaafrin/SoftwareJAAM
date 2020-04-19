@@ -1,5 +1,10 @@
 /* Smooth Scrolling Effect
 ========================== */
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html {
     scroll-behavior: smooth;
   }
@@ -30,7 +35,6 @@ li a:hover {
 
 .main {
     background-color: rgb(8, 2, 41);
-    height: 100vh;
 }
 
 .moral_1 {
