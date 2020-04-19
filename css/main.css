@@ -4,6 +4,8 @@
     margin: 0;
 }
 
+/* body 
+========================== */
 body, html {
     overflow-x: hidden;
 }
@@ -12,6 +14,8 @@ html {
     scroll-behavior: smooth;
   }
 
+/* nav
+========================== */
 .navbar {
     background-image: linear-gradient(to bottom right, #080228, rgb(5, 72, 74));
     border-bottom: 5px solid rgb(10, 156, 160);
@@ -24,8 +28,7 @@ html {
 .navbar-brand{
     font-weight: bolder;
 }
-
-li a {
+.navbar-light .navbar-toggler, li a {
     background-color: rgb(5, 72, 74);
     border: 1px solid rgb(2, 150, 155);
 }
@@ -228,7 +231,8 @@ textarea {
 }
 
 
-/* Home Button */
+/* Home Button 
+========================== */
 .scroll-up {
     position: fixed;
     display: none;
