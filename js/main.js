@@ -1,11 +1,13 @@
+// Home Button visibility
 $(document).ready(function () {
-    $('.header').height($(window).height());
 
-    $(".navbar a").click(function () {
-        $("body,html").animate({
-            scrollTop: $("#" + $(this).data('value')).offset().top
-        }, 1000)
-
+    $(".cta").css({ "opacity": "0" })
+    $(window).scroll(function () {
+        if ($(this).scrollTop() < 200) {
+            $(".homebtn").removeClass("cta")
+        }
+        else {
+            $(".homebtn").addClass("cta")
+        }
     })
-
 })

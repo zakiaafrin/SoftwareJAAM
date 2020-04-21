@@ -17,7 +17,8 @@ html {
 /* nav
 ========================== */
 .navbar {
-    background-image: linear-gradient(to bottom right, #080228, rgb(5, 72, 74));
+    /* background-image: linear-gradient(to bottom right, #080228, rgb(5, 72, 74)); */
+    background-image: linear-gradient(to bottom right, #0802283d, #061a33);
     border-bottom: 5px solid rgb(10, 156, 160);
 }
 
@@ -27,6 +28,8 @@ html {
 
 .navbar-brand{
     font-weight: bolder;
+    font-size: 22px;
+    text-shadow: 2px 2px black;
 }
 .navbar-light .navbar-toggler, li a {
     background-color: rgb(5, 72, 74);
@@ -39,10 +42,44 @@ li a:hover {
     border-radius: 5px;
 }
 
+/* Home Button
+========================== */
+.homebtn {
+    display: inline-block;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+a.homebtn{
+    position: fixed;
+    right: 4vw;
+    bottom: 4vw;
+    z-index: 1;
+    opacity: 0 !important;
+}
+a.cta {
+    opacity: 1 !important;
+    -webkit-transition: all ease-in-out .3s;
+    transition: all ease-in-out .3s;
+    -webkit-transition: all ease-in-out .3s;
+    }
+a.homebtn:hover {
+    transform: scale(1.2);
+}
+
+/* Home Page
+========================== */
 .main {
     background-color: rgb(8, 2, 41);
 }
 
+/* Moral-1
+========================== */
 .moral_1 {
     background-image: url(../images/moral_1.jpg);
     background-repeat: no-repeat;
@@ -51,6 +88,8 @@ li a:hover {
     border-top: 2px solid cornflowerblue;
 }
 
+/* Service
+========================== */
 .collapse{
     padding: 20px;
 }
@@ -158,6 +197,8 @@ li a:hover {
 
 }
 
+/* Moral-2
+========================== */
 .moral_2 {
     background-image: url(../images/moral_2.jpg);
     background-repeat: no-repeat;
@@ -166,6 +207,8 @@ li a:hover {
     border-bottom: 2px solid cornflowerblue;
 }
 
+/* Moral-3
+========================== */
 .moral_3 {
     background-image: url(../images/moral_3.jpg);
     background-repeat: no-repeat;
@@ -179,6 +222,8 @@ hr {
     border-top: 2px solid rgb(10, 156, 160);
 }
 
+/* Moral-4
+========================== */
 .moral_4 {
     background-image: url(../images/moral_4.jpg);
     background-repeat: no-repeat;
@@ -189,6 +234,8 @@ hr {
     opacity: 95%;
 }
 
+/* Contact
+========================== */
 .color {
     color: rgb(10, 156, 160);
 }
@@ -213,11 +260,8 @@ textarea {
     min-height: 150px;
 }
 
-.row-position {
-    margin-right: 40px;
-    margin-left: 40px;
-}
-
+/* Footer
+========================== */
 .footer-wrapper {
     background-color: black;
     padding: 36px 0 10px 0;
@@ -228,15 +272,4 @@ textarea {
     font-size: 25px;
     margin-bottom: 48px;
     cursor: pointer;
-}
-
-
-/* Home Button 
-========================== */
-.scroll-up {
-    position: fixed;
-    display: none;
-    z-index: 999;
-    bottom: 1.8em;
-    right: 1.8em;
 }
