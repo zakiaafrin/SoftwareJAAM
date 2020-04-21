@@ -29,16 +29,16 @@ html {
 .navbar-brand{
     font-weight: bolder;
     font-size: 22px;
-    text-shadow: 2px 2px black;
+    text-shadow: 3px 2px black;
 }
 .navbar-light .navbar-toggler, li a {
     background-color: rgb(5, 72, 74);
-    border: 1px solid rgb(2, 150, 155);
+    border: 3px double rgb(2, 150, 155);
 }
 
 li a:hover {
     background-color: rgb(2, 150, 155);
-    border: 1px solid white;
+    border: 3px double white;
     border-radius: 5px;
 }
 
