@@ -167,10 +167,11 @@ a.homebtn:hover {
 }
 
 .accordion .card-body{
-    padding: 10px 30px 10px;
+    padding: 25px;
     border: none;
     font-size: 14px;
     line-height: 28px;
+    box-shadow: 2px 5px 3px grey;
 }
 
 .card{
@@ -194,6 +195,18 @@ a.homebtn:hover {
 
 .p_service {
     font-size: 16.5px;
+}
+
+.border {
+    border: 1px solid rgb(10, 156, 160)! important;
+    border-radius: 5px;
+}
+
+.border:hover {
+    border: 1px solid rgb(10, 156, 160)! important;
+    border-radius: 5px;
+    color: white;
+    background-color: teal;
 }
 
 /* Moral-2
@@ -241,18 +254,6 @@ hr {
 
 .button{
     background-color: rgb(10, 156, 160);
-}
-
-.border {
-    border: 2px dotted rgb(10, 156, 160)! important;
-    border-radius: 5px;
-}
-
-.border:hover {
-    border: 2px solid rgb(10, 156, 160)! important;
-    border-radius: 5px;
-    color: white;
-    background-color: teal;
 }
 
 textarea {
