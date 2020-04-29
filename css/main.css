@@ -20,6 +20,7 @@ html {
     /* background-image: linear-gradient(to bottom right, #080228, rgb(5, 72, 74)); */
     background-image: linear-gradient(to bottom right, #0802283d, #061a33);
     border-bottom: 5px solid rgb(10, 156, 160);
+    padding: 0 1rem !important;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -253,8 +254,23 @@ hr {
 
 /* Contact
 ========================== */
-.color {
+label {
     color: rgb(10, 156, 160);
+    font-weight: 700;
+}
+
+.form-control {
+    border: 2px solid #ced4da;
+    border-radius: 0 20px 0 20px;
+}
+
+.form-control:hover {
+    border: 2px solid #6f42c1;
+    border-radius: 0 20px 0 20px;
+}
+
+.color {
+    color: rgb(161, 166, 167);
 }
 
 .button{
@@ -262,7 +278,7 @@ hr {
 }
 
 textarea {
-    min-height: 150px;
+    min-height: 100px;
 }
 
 /* Footer
